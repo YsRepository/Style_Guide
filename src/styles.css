@@ -1,0 +1,265 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  margin:0;
+  padding:0;
+}
+.ui-md-9{
+  padding: 0!important;
+}
+
+/*HEADER*/
+.header{
+  background: #20272a;
+  width:100%;
+  height: 3em;
+}
+.logotipo{
+  height: 25px;
+  display: block;
+  margin: 0 auto;
+}
+
+/*ASIDE NAV SECTION*/
+.aside{
+  background: #ebedf0;
+  min-height:93vh;
+}
+@media (max-width: 640px){
+  .aside{
+    display: none;
+  }
+}
+.navbar-nav{
+  display: block!important;
+  width: 100%;
+  padding-top:2em;
+}
+.navbar ul li a {
+  color:#333;
+  font-size: .9em;
+  border-bottom: 1px solid #fff;
+}
+.navbar ul li a:hover{
+  background:rgba(35,153,229,0.7);
+  opacity: .9;
+  color:#fff;
+}
+
+/*MAIN CONTENT*/
+/*TYPOGRAFHY*/
+
+.titleMain{
+  background: #2399e5;
+  margin:0!important;
+  height: 3.5em;
+  width: 100%!important;
+}
+.titleMain h5{
+  text-align: left;
+  color:#fff;
+  font-weight: 200;
+  line-height: 2em;
+}
+h5{
+  text-align: left;
+  color:#2399e5;
+  font-weight: 200;
+}
+h5.color-normal{
+  color: #000;
+}
+p{
+  font-size: 80%!important;
+  color: #7c7e80!important;
+}
+.parrafo-app{
+  color:#333!important;
+  font-size: 85%!important;
+}
+.codigo{
+  color: #15b757!important;
+  padding:5px;
+  font-size: .9em!important;
+}
+
+
+/*COLOR PALETTE*/
+.color-header-app{
+  background: #212529;
+  color: #ccc;
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  padding:5px;
+  padding:5px;
+}
+.color-title-app{
+  background: #ebedf0;
+  color: #ccc;
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  padding:5px;
+  padding:5px;
+}
+.color-primary{
+  background: #2399e5;
+  color: #ccc;
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  padding:5px;
+  padding:5px;
+}
+
+/*tabs styles example, source, doc*/
+.ui-tabview.ui-tabview-top>.ui-tabview-nav li {
+  border-bottom: 0;
+  top: 1px;
+  background: #ebedf0;
+  border: none;
+  border-radius: 0;
+}
+.ui-tabview {
+  padding: 0;
+}
+.ui-tabview .ui-state-active a {
+  color: #fff;
+  background: #156090;
+}
+
+
+
+/**************************STYLE DEFINED*************************************
+*****************************************************************************
+*****************************************************************************
+ */
+
+
+/*BUTTONS STYLES*/
+
+/*buttons primary*/
+.ui-button{
+  width: 100%;
+}
+.ui-button, .ui-widget.ui-button, .ui-button {
+  border: 1px solid #2399e5;
+  color: #FFFFFF;
+  background: #2399e5;
+  transition: background-color .2s;
+}
+
+/*Button files style*/
+.labelFiles{
+  color:#fff!important;
+  padding: 2px 0;
+  text-align: center;
+  width:100%;
+  background: #125886!important;
+  border-radius: 3px;
+  cursor: pointer;
+}
+input.choose{
+  display: none;
+}
+.labelFiles i{
+  float: left;
+  margin:2px 10px;
+}
+
+/*-------------------------*/
+
+/*INPUTS STYLE*/
+
+/*inputText*/
+.ui-inputtext{
+  width:100%!important;
+  padding: 0 5px;
+}
+.ui-widget input{
+  font-size: 90%;
+}
+
+/*Label*/
+label {
+  color:#333!important;
+  font-size:0.9em!important;
+  text-align: left;
+  display: block;
+  margin-bottom: 0px!important
+}
+/*Autocomplete*/
+.ui-autocomplete{
+  width:100%;
+  margin: 0!important;
+  padding: 0px!important;
+}
+
+.ui-autocomplete .ui-autocomplete-input {
+  padding-right: 0!important;
+  font-size: .85em!important;
+  width: 85%!important;
+}
+.ui-autocomplete .ui-button-icon-only,
+.ui-autocomplete .ui-button-icon-only:enabled:hover,
+.ui-autocomplete .ui-button-icon-only:enabled:focus,
+.ui-autocomplete .ui-button-icon-only:enabled:active{
+  position: absolute;
+}
+
+/*dropdown*/
+.ui-dropdown{
+  width:100%!important;
+}
+.ui-dropdown .ui-dropdown-trigger .fa {
+  margin-top: 0;
+}
+
+/*input required*/
+.ui-message{
+  display: block;
+  padding: 0 .5em;
+  font-size: 90%;
+}
+.ui-inputtext.ng-dirty.ng-invalid{
+  border-left: 3px solid #f44336;
+}
+.ui-message .fa{
+  display: none;
+}
+
+/*disabled*/
+.ui-state-disabled, .ui-widget:disabled {
+  opacity: 0.5;
+}
+
+
+/*-------------------------*/
+
+/*DATA TABLE*/
+
+.ui-datatable .ui-dropdown{
+  width: auto!important;
+}
+
+.ui-datatable .ui-datatable-header{
+  padding: 0!important;
+  font-weight: 700;
+}
+.ui-column-title{
+  font-size: .9em!important;
+}
+
+.ui-paginator .ui-paginator-page, .ui-paginator
+.ui-paginator-next, .ui-paginator .ui-paginator-last,
+.ui-paginator .ui-paginator-first, .ui-paginator
+.ui-paginator-prev {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.ui-paginator span{
+  margin-top:0!important;
+}

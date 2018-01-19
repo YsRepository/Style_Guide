@@ -1,0 +1,253 @@
+<!--title seccion-->
+<div class=" ui-g-12 titleMain" xmlns="http://www.w3.org/1999/html">
+  <div class="container">
+    <div class="ui-g-12 ui-md-10 ui-lg-10">
+      <h5>{{title}}</h5>
+    </div>
+    <div class="ui-g-12 ui-md-1 ui-lg-2">
+      <button pButton type="button" label="Down styles" icon="fa-css3" class="ui-button-info btn-css"></button>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="ui-g-12">
+  <br>
+  <div class="container">
+    <h5>Button Color Action</h5>
+    <p-tabView>
+      <p-tabPanel header="Example">
+        <br>
+        <div class="ui-g">
+          <div class="ui-g-12 ui-md-2 ui-lg-3">
+            <button pButton type="button" label="Search" icon="fa fa-search" ></button>
+          </div>
+          <div class="ui-g-12 ui-md-6 ui-lg-8">
+            <p>
+              Primary color associated with simple actions, not associated with a confirmation. <br>
+              Example: search, see, ok,.</p>
+          </div>
+        </div>
+        <div class="ui-g">
+          <div class="ui-g-12 ui-md-6 ui-lg-3">
+            <button pButton type="button" label="Cancel"  class="ui-button-secondary"></button>
+          </div>
+          <div class="ui-g-12 ui-md-6 ui-lg-8">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <br>
+              Aenean massa. Cum sociis natoque </p>
+          </div>
+        </div>
+        <div class="ui-g">
+          <div class="ui-g-12 ui-md-6 ui-lg-3">
+            <button pButton type="button" label="Send think" icon="fa fa-paper-plane" class="ui-button-success"></button>
+          </div>
+          <div class="ui-g-12 ui-md-6 ui-lg-8">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <br>
+              Aenean massa. Cum sociis natoque </p>
+          </div>
+        </div>
+        <div class="ui-g">
+          <div class="ui-g-12 ui-md-6 ui-lg-3">
+            <button pButton type="button" label="Delete think" icon="fa fa-trash-o" class="ui-button-danger"></button>
+          </div>
+          <div class="ui-g-12 ui-md-6 ui-lg-8">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <br>
+              Aenean massa. Cum sociis natoque </p>
+          </div>
+        </div>
+      </p-tabPanel>
+      <p-tabPanel header="Source">
+        <div class="ui-g">
+          <h6 class="subTitle">HTML :</h6>
+          <div class="ui-g-12 bgHtml">
+           <p> &lt;button pButton type="button" label="Delete think" icon="fa fa-trash-o" <span>class="ui-button-danger"</span>&gt;&lt;/button&gt;</p>
+          </div>
+          <br>
+          <br>
+          <h6 class="subTitle">css :</h6>
+          <div class="ui-g-12 bgHtml">
+            <p><span>.ui-button-danger</span> &#123; width:100%; background-color: #d9534f;
+            border-color: #d9534f;
+            color: #fff; &#125;</p>
+          </div>
+        </div>
+
+      </p-tabPanel>
+      <p-tabPanel header="Documentation">
+        Content 3
+      </p-tabPanel>
+    </p-tabView>
+  </div>
+</div>
+
+  <hr>
+  <!--*******************ICON SECTION**********************-->
+  <div class="ui-g-12">
+   <br>
+   <div class="container">
+  <h5>Button Icon</h5>
+  <p-tabView>
+    <p-tabPanel header="Example">
+      <br>
+      <p>The most used icons of FontAwesome :</p>
+      <div class="ui-g">
+        <div class="ui-g-12 ui-md-6 ui-lg-3">
+          <button pButton type="button" label="Search" icon="fa fa-search" class="ui-button-primary-table"></button>
+        </div>
+        <div class="ui-g-12 ui-md-6 ui-lg-3">
+            <button pButton type="button" label="Edit" icon="fa fa-pencil" class="ui-button-primary"></button>
+        </div>
+        <div class="ui-g-12 ui-md-6 ui-lg-3">
+          <button pButton type="button" label="Add think"  icon="fa fa-plus" class="ui-button-primary"></button>
+        </div>
+        <div class="ui-g-12 ui-md-6 ui-lg-3">
+          <button pButton type="button" label="Back" icon="fa fa-chevron-left" class="ui-button-primary"></button>
+        </div>
+        <div class="ui-g-12 ui-md-6 ui-lg-3">
+          <button pButton type="button" label="Send think" icon="fa fa-paper-plane" class="ui-button-success"></button>
+        </div>
+        <div class="ui-g-12 ui-md-6 ui-lg-3">
+          <button pButton type="button" label="Save think" icon="fa fa-floppy-o" class="ui-button-success"></button>
+        </div>
+        <div class="ui-g-12 ui-md-6 ui-lg-3">
+          <button pButton type="button" label="Delete think" icon="fa fa-trash-o" class="ui-button-danger"></button>
+        </div>
+        <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+      </div>
+    </p-tabPanel>
+    <p-tabPanel header="Source">
+      <div class="ui-g">
+        <h6 class="subTitle">HTML :</h6>
+        <div class="ui-g-12 bgHtml">
+          <p>&lt;button pButton type="button" label="Search" <span>icon="fa fa-search"</span> class="ui-button-primary" &gt;&lt;/button&gt;</p>
+          <p>&lt;button pButton type="button" label="Edit" <span>icon="fa fa-pencil"</span> class="ui-button-primary"&gt;&lt;/button&gt;</p>
+          <p>&lt;button pButton type="button" label="Add Think" <span>icon="fa fa-plus"</span> class="ui-button-primary"&gt;&lt;/button&gt;</p>
+          <p>&lt;button pButton type="button" label="Back" <span>icon="fa fa-chevron-left"</span> class="ui-button-primary"&gt;&lt;/button&gt;</p>
+          <p>&lt;button pButton type="button" label="Send think" <span>icon="fa fa-paper-plane"</span> class="ui-button-success"&gt;&lt;/button&gt;</p>
+          <p>&lt;button pButton type="button" label="Save Think" <span>icon="fa fa-floppy-o"</span> class="ui-button-success"&gt;&lt;/button&gt;</p>
+          <p>&lt;button pButton type="button" label="Save Think" <span>icon="fa fa-trash-o"</span> class="ui-button-danger"&gt;&lt;/button&gt;</p>
+        </div>
+        <br>
+        <br>
+        <h6 class="subTitle">css :</h6>
+        <div class="ui-g-12 bgHtml">
+          <p><span>.ui-button-danger</span> &#123; width:100%; background-color: #d9534f;
+          border-color: #d9534f;
+          color: #fff; &#125;</p>
+        </div>
+      </div>
+    </p-tabPanel>
+    <p-tabPanel header="Documentation">
+      Content 3
+    </p-tabPanel>
+  </p-tabView>
+ </div>
+</div>
+
+  <!--*******************BUTTON TABLE SECTION**********************-->
+  <div class="ui-g-12">
+    <hr>
+    <br>
+    <div class="container">
+      <h5>Buttons Inside Table</h5>
+      <p-tabView>
+        <p-tabPanel header="Example">
+          <br>
+          <p>The most used buttons inside table:</p>
+          <div class="ui-g">
+              <button pButton type="button"  icon="fa fa-search" pTooltip="View item" class="ui-button-primary-icon"></button>
+
+              <button pButton type="button"  icon="fa fa-pencil" pTooltip="Edit item" class="ui-button-primary-icon"></button>
+
+              <button pButton type="button"  icon="fa fa-plus" pTooltip="Add item" class="ui-button-primary-icon"></button>
+
+              <button pButton type="button"  icon="fa fa-trash-o" pTooltip="Delete item" class="ui-button-danger ui-button-danger-icon"></button>
+          </div>
+          <br>
+          <p>all the buttons must have a tooltip with the detail of their action.</p>
+        </p-tabPanel>
+        <p-tabPanel header="Source">
+          <div class="ui-g">
+            <h6 class="subTitle">HTML :</h6>
+            <div class="ui-g-12 bgHtml">
+              <p>&lt;button pButton type="button"  icon="fa fa-search" pTooltip="View item" <span>class="ui-button-primary-icon"</span>&gt;&lt;/button&gt;</p>
+              <p>&lt;button pButton type="button"  icon="fa fa-pencil" pTooltip="Edit item" <span>class="ui-button-primary-icon"</span>&gt;&lt;/button&gt;</p>
+              <p>&lt;button pButton type="button"  icon="fa fa-plus" pTooltip="Add item" <span>class="ui-button-primary-icon"</span>&gt;&lt;/button&gt;</p>
+              <p>&lt;button pButton type="button"  icon="fa fa-trash-o" pTooltip="Delete item" <span>class="ui-button-danger ui-button-danger-icon"</span>&gt;&lt;/button&gt;</p>
+            </div>
+            <br>
+            <br>
+            <h6 class="subTitle">css :</h6>
+            <div class="ui-g-12 bgHtml">
+             <p><span>.ui-button-primary-icon</span> &#123;
+              width: 20px!important;
+              height: 20px!important;
+              padding: 10px;
+              text-align: center;
+              font-size: .9em; &#125;</p>
+
+            </div>
+          </div>
+
+        </p-tabPanel>
+        <p-tabPanel header="Documentation">
+          Content 3
+        </p-tabPanel>
+      </p-tabView>
+    </div>
+  </div>
+
+  <!--*******************BUTTON FILE SECTION**********************-->
+  <div class="ui-g-12">
+    <hr>
+    <br>
+    <div class="container">
+      <h5>Buttons File</h5>
+      <p-tabView>
+        <p-tabPanel header="Example">
+          <br>
+          <p>The most used buttons for file management.</p>
+          <div class="ui-g">
+            <div class="ui-g-12 ui-md-6 ui-lg-3">
+              <button pButton type="button" icon="fa fa-download" label="Download Template" class="ui-button-file"></button>
+            </div>
+            <div class="ui-g-12 ui-md-6 ui-lg-3">
+              <label class="labelFiles" >
+                <i class="fa fa-upload" aria-hidden="true"></i> Upload Template
+                <input class="choose" #data type="file" accept=".xls" name="file">
+              </label>
+            </div>
+          </div>
+        </p-tabPanel>
+        <p-tabPanel header="Source">
+          <div class="ui-g">
+            <h6 class="subTitle">HTML :</h6>
+            <div class="ui-g-12 bgHtml">
+              <p>&lt;button pButton type="button"  icon="fa fa-search" pTooltip="View item" <span>class="ui-button-primary-icon"</span>&gt;&lt;/button&gt;</p>
+              <p>&lt;button pButton type="button"  icon="fa fa-pencil" pTooltip="Edit item" <span>class="ui-button-primary-icon"</span>&gt;&lt;/button&gt;</p>
+              <p>&lt;button pButton type="button"  icon="fa fa-plus" pTooltip="Add item" <span>class="ui-button-primary-icon"</span>&gt;&lt;/button&gt;</p>
+              <p>&lt;button pButton type="button"  icon="fa fa-trash-o" pTooltip="Delete item" <span>class="ui-button-danger ui-button-danger-icon"</span>&gt;&lt;/button&gt;</p>
+            </div>
+            <br>
+            <br>
+            <h6 class="subTitle">css :</h6>
+            <div class="ui-g-12 bgHtml">
+              <p><span>.ui-button-primary-icon</span> &#123;
+                width: 20px!important;
+                height: 20px!important;
+                padding: 10px;
+                text-align: center;
+                font-size: .9em; &#125;</p>
+
+            </div>
+          </div>
+
+        </p-tabPanel>
+        <p-tabPanel header="Documentation">
+          Content 3
+        </p-tabPanel>
+      </p-tabView>
+    </div>
+  </div>
+
+
