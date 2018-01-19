@@ -8,3 +8,74 @@
     </div>
   </div>
 </div>
+
+
+<div class="ui-g-12">
+  <br>
+  <div class="container">
+    <h5>Button Color Action</h5>
+    <p-tabView>
+      <p-tabPanel header="Example">
+        <br>
+        <div class="ui-g">
+          <div class="ui-g-12 ui-md-2 ui-lg-3">
+            <button pButton type="button" (click)="showDialog()" icon="fa fa-search" pTooltip="View item" class="ui-button-primary-icon"></button>
+          </div>
+          <div class="ui-g-12 ui-md-2 ui-lg-9">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <br>
+              Aenean massa. Cum sociis natoque </p>
+          </div>
+          <p-dialog header="Title" [(visible)]="dialogExample">
+            <p-dataTable [value]="tableExample"
+                         [rows]="10"
+                         [paginator]="true"
+                         [pageLinks]="3"
+                         [rowsPerPageOptions]="[5,10,20]">
+              <p-header>List of Example</p-header>
+              <p-column field="vin" header="Vin"></p-column>
+              <p-column field="year" header="Year"></p-column>
+              <p-column field="brand" header="Brand"></p-column>
+              <p-column field="color" header="Color"></p-column>
+            </p-dataTable>
+            <div class="ui-g-12 ui-md-6 ui-lg-3">
+              <button type="text" (click)="save()" pButton icon="fa fa-floppy-o" label="Save"></button>
+            </div>
+          </p-dialog>
+        </div>
+        <div class="ui-g">
+          <div class="ui-g-12 ui-md-2 ui-lg-3">
+            <button pButton type="button" (click)="confirm()" icon="fa fa fa-check" label="Confirm" class="ui-button-primary"></button>
+          </div>
+          <div class="ui-g-12 ui-md-2 ui-lg-9">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <br>
+              Aenean massa. Cum sociis natoque </p>
+          </div>
+
+
+        </div>
+
+
+      </p-tabPanel>
+      <p-tabPanel header="Source">
+        <div class="ui-g">
+          <h6 class="subTitle">HTML :</h6>
+          <div class="ui-g-12 bgHtml">
+            <p> &lt;button pButton type="button" label="Delete think" icon="fa fa-trash-o" <span>class="ui-button-danger"</span>&gt;&lt;/button&gt;</p>
+          </div>
+          <br>
+          <br>
+          <h6 class="subTitle">css :</h6>
+          <div class="ui-g-12 bgHtml">
+            <p><span>.ui-button-danger</span> &#123; width:100%; background-color: #d9534f;
+              border-color: #d9534f;
+              color: #fff; &#125;</p>
+          </div>
+        </div>
+
+      </p-tabPanel>
+      <p-tabPanel header="Documentation">
+        Content 3
+      </p-tabPanel>
+    </p-tabView>
+  </div>
+</div>

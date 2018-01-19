@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dialog.component.css']
 })
 export class DialogComponent implements OnInit {
-   title = 'Dialog Components';
+  title = 'Dialog Components';
+  dialogExample = false;
   constructor() { }
 
   ngOnInit() {
   }
+
+  showDialog(){
+    this.dialogExample = true;
+  }
+
 
 }
