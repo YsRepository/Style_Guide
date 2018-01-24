@@ -10,7 +10,7 @@ export class InputsComponent implements OnInit {
   title = 'Inputs Components';
   formulario = false;
 
-  state = 'inactive';
+  state = 'inactive' ;
   constructor() { }
 
   ngOnInit() {
