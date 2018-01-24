@@ -8,6 +8,9 @@ import { InputsComponent } from './inputs/inputs.component';
 import {GeneralComponent} from './general/general.component';
 import { PanelComponent } from './panel/panel.component';
 import { DialogComponent } from './dialog/dialog.component';
+import {TableComponent} from './table/table.component';
+import {SidebarComponent} from './sidebar/sidebar.component';
+import {NavbarComponent} from './navbar/navbar.component';
 
 const appRoutes: Routes = [
   {path: '', component: GeneralComponent},
@@ -15,7 +18,9 @@ const appRoutes: Routes = [
   {path: 'buttons', component: ButtonsComponent},
   {path: 'inputs', component: InputsComponent},
   {path: 'panel', component: PanelComponent},
+  {path: 'navbar', component: NavbarComponent},
   {path: 'dialog', component: DialogComponent},
+  {path: 'table', component: TableComponent},
   {path: '**', component: GeneralComponent}
 ];
 

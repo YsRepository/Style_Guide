@@ -19,23 +19,6 @@ span{
   font-size: .9em!important;
 }
 
-
-.ui-button-primary-icon{
-  width: 20px!important;
-  height: 20px!important;
-  padding: 10px;
-  text-align: center;
-  font-size: .9em;
-}
-
-.ui-button-danger-icon{
-  width: 20px!important;
-  height: 20px!important;
-  padding: 10px;
-  text-align: center;
-  font-size: .9em;
-}
-
 .ui-button-file{
   background: #156090!important;
   border: 1px solid #156090!important;

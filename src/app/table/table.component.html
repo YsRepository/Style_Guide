@@ -1,0 +1,68 @@
+
+<div class=" ui-g-12 titleMain" xmlns="http://www.w3.org/1999/html">
+  <div class="container">
+    <div class="ui-g-12 ui-md-10 ui-lg-10">
+      <h5>{{title}}</h5>
+    </div>
+    <div class="ui-g-12 ui-md-1 ui-lg-2">
+      <button pButton type="button" label="Down styles" icon="fa-css3" class="ui-button-info btn-css"></button>
+    </div>
+  </div>
+</div>
+
+<div class="ui-g-12">
+  <br>
+  <div class="container">
+    <h5>Data Table</h5>
+    <p-tabView>
+      <p-tabPanel header="Example">
+        <br>
+        <p>The most used attributes:</p>
+        <p-dataTable
+          [value]="ExampleList"
+          [rows]="10"
+          [rowsPerPageOptions]="[10,30,40]"
+          [paginator]="true"
+          scrollable="true"
+          responsive="true" >
+          <p-header>List of Example</p-header>
+          <p-column field="vin" header="Action" [style]="{'width': '50px'}">
+            <ng-template  pTemplate="body" let-row="rowData">
+              <button pButton type="button"  icon="fa fa-search" pTooltip="View item" class="ui-button-primary-icon"></button>
+              <button pButton type="button"  icon="fa fa-trash-o" pTooltip="Delete item" class="ui-button-danger-icon"></button>
+            </ng-template>
+          </p-column>
+          <p-column field="cpi" header="CPI" [style]="{'width': '60px'}"></p-column>
+          <p-column field="name" header="Vendor Name" [style]="{'width': '80px'}"></p-column>
+          <p-column field="po" header="PO" [style]="{'width': '60px'}"></p-column>
+          <p-column field="date" header="Creation date" [style]="{'width': '80px'}"></p-column>
+          <p-column field="description" header="Description" [style]="{'width': '120px'}"></p-column>
+        </p-dataTable>
+
+      </p-tabPanel>
+      <p-tabPanel header="Source">
+        <div class="ui-g">
+          <h6 class="subTitle">HTML :</h6>
+          <div class="ui-g-12 bgHtml">
+            ....
+          </div>
+          <br>
+          <br>
+          <h6 class="subTitle">css :</h6>
+          <div class="ui-g-12 bgHtml">
+            <p><span>.ui-button-primary-icon</span> &#123;
+              width: 20px!important;
+              height: 20px!important;
+              padding: 10px;
+              text-align: center;
+              font-size: .9em; &#125;</p>
+
+          </div>
+        </div>
+      </p-tabPanel>
+      <p-tabPanel header="Use Cases">
+        Content 3
+      </p-tabPanel>
+    </p-tabView>
+  </div>
+</div>

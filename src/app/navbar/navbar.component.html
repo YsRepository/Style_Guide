@@ -1,25 +1,61 @@
-<nav class="navbar navbar-expand-lg">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" [routerLink]="'/general'">GENERAL</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="'/buttons'">BUTTONS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="'/inputs'">INPUTS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="'/panel'">PANEL</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="'/dialog'">DIALOG</a>
-      </li>
-    </ul>
+<div class=" ui-g-12 titleMain" xmlns="http://www.w3.org/1999/html">
+  <div class="container">
+    <div class="ui-g-12 ui-md-10 ui-lg-10">
+      <h5>{{title}}</h5>
+    </div>
+    <div class="ui-g-12 ui-md-1 ui-lg-2">
+      <button pButton type="button" label="Down styles" icon="fa-css3" class="ui-button-info btn-css"></button>
+    </div>
   </div>
-</nav>
+</div>
+
+
+
+<div class="ui-g-12">
+  <br>
+  <div class="container">
+    <h5>Navbar Menu</h5>
+    <p-tabView>
+      <p-tabPanel header="Example">
+        <br>
+        <p>The most used attributes:</p>
+
+        <div class="header">
+          <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <img src="../assets/Sodimac.png" class="logotipo" alt="logo">
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="navbar">Link 1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="navbar">Link 2</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="navbar">Link 3</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="ui-g-12 title-module">
+            <div class="container">
+              <span>Title Module</span>
+            </div>
+          </div>
+
+        </div>
+
+      </p-tabPanel>
+      <p-tabPanel header="Source"></p-tabPanel>
+      <p-tabPanel header="Use Cases"></p-tabPanel>
+    </p-tabView>
+  </div>
+</div>
+

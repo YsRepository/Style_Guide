@@ -3,9 +3,6 @@
     <div class="ui-g-12 ui-md-10 ui-lg-10">
       <h5>{{title}}</h5>
     </div>
-    <div class="ui-g-12 ui-md-1 ui-lg-2">
-      <button pButton type="button" label="Down styles" icon="fa-css3" class="ui-button-info btn-css"></button>
-    </div>
   </div>
 </div>
 
@@ -19,13 +16,14 @@
         <br>
         <div class="ui-g">
           <div class="ui-g-12 ui-md-2 ui-lg-3">
-            <button pButton type="button" (click)="showDialog()" icon="fa fa-search" pTooltip="View item" class="ui-button-primary-icon"></button>
+            <button pButton type="button" (click)="showDialog()" icon="fa fa-search" pTooltip="View item"
+             class="ui-button-primary-icon"></button>
           </div>
           <div class="ui-g-12 ui-md-2 ui-lg-9">
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <br>
               Aenean massa. Cum sociis natoque </p>
           </div>
-          <p-dialog header="Title" [(visible)]="dialogExample">
+          <p-dialog header="Title" [(visible)]="dialogExample" modal="true">
             <p-dataTable [value]="tableExample"
                          [rows]="10"
                          [paginator]="true"
@@ -73,7 +71,7 @@
         </div>
 
       </p-tabPanel>
-      <p-tabPanel header="Documentation">
+      <p-tabPanel header="Use Cases">
         Content 3
       </p-tabPanel>
     </p-tabView>

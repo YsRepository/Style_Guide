@@ -1,11 +1,16 @@
 <!--title seccion-->
 <div class=" ui-g-12 titleMain" xmlns="http://www.w3.org/1999/html">
   <div class="container">
+    <div class="ui-g-2">
+
+      <p-sidebar [(visible)]="display">
+        <app-sidebar></app-sidebar>
+      </p-sidebar>
+
+      <button type="text" (click)="display = true" pButton icon="fa-external-link-square" label="Show"></button>
+    </div>
     <div class="ui-g-12 ui-md-10 ui-lg-10">
       <h5>{{title}}</h5>
-    </div>
-    <div class="ui-g-12 ui-md-1 ui-lg-2">
-      <button pButton type="button" label="Down styles" icon="fa-css3" class="ui-button-info btn-css"></button>
     </div>
   </div>
 </div>
@@ -73,7 +78,7 @@
         </div>
 
       </p-tabPanel>
-      <p-tabPanel header="Documentation">
+      <p-tabPanel header="Use Cases">
         Content 3
       </p-tabPanel>
     </p-tabView>
@@ -137,7 +142,7 @@
         </div>
       </div>
     </p-tabPanel>
-    <p-tabPanel header="Documentation">
+    <p-tabPanel header="Use Cases">
       Content 3
     </p-tabPanel>
   </p-tabView>
@@ -161,7 +166,7 @@
 
               <button pButton type="button"  icon="fa fa-plus" pTooltip="Add item" class="ui-button-primary-icon"></button>
 
-              <button pButton type="button"  icon="fa fa-trash-o" pTooltip="Delete item" class="ui-button-danger ui-button-danger-icon"></button>
+              <button pButton type="button"  icon="fa fa-trash-o" pTooltip="Delete item" class="ui-button-danger-icon"></button>
           </div>
           <br>
           <p>all the buttons must have a tooltip with the detail of their action.</p>
@@ -190,7 +195,7 @@
           </div>
 
         </p-tabPanel>
-        <p-tabPanel header="Documentation">
+        <p-tabPanel header="Use Cases">
           Content 3
         </p-tabPanel>
       </p-tabView>
@@ -206,7 +211,7 @@
       <p-tabView>
         <p-tabPanel header="Example">
           <br>
-          <p>The most used buttons for file management.</p>
+          <p>Download in a format.</p>
           <div class="ui-g">
             <div class="ui-g-12 ui-md-6 ui-lg-3">
               <button pButton type="button" icon="fa fa-download" label="Download Template" class="ui-button-file"></button>
@@ -218,6 +223,27 @@
               </label>
             </div>
           </div>
+          <br>
+          <p>Download in Multi format.</p>
+          <div class="ui-g">
+            <div class="ui-g-12 ui-md-6 ui-lg-3">
+              <button pButton type="text" icon="fa fa-download" (click)="op.toggle($event)" label="Download Template" class="ui-button-file"></button>
+              <p-overlayPanel #op>
+                <br>
+                <button pButton type="button" icon="fa fa-download" label="Download Pdf" class="ui-button-file"></button>
+                <br>
+                <br>
+                <button pButton type="button" icon="fa fa-download" label="Download (.xlsx)" class="ui-button-file"></button>
+                <br>
+              </p-overlayPanel>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
         </p-tabPanel>
         <p-tabPanel header="Source">
           <div class="ui-g">
@@ -243,7 +269,7 @@
           </div>
 
         </p-tabPanel>
-        <p-tabPanel header="Documentation">
+        <p-tabPanel header="Use Cases">
           Content 3
         </p-tabPanel>
       </p-tabView>

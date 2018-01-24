@@ -22,7 +22,7 @@
           <p-calendar id="calendar" [showIcon]="true" placeholder="Select Date..." dateFormat="dd M yy" ></p-calendar>
         </div>
         <div class="ui-g-12 ui-md-6 ui-lg-3">
-          <label for="autocomplete">Creation Date:</label>
+          <label for="autocomplete">Search by CPI:</label>
           <p-autoComplete id="autocomplete" [dropdown]="true"  placeholder="Search by ..."></p-autoComplete>
         </div>
         <div class="ui-g-12 ui-md-6 ui-lg-3">
@@ -30,12 +30,12 @@
           <p-dropdown id="dropdown" [options]="cities" placeholder="Select one ..." autoWidth="true" optionLabel="name"></p-dropdown>
         </div>
         <div class="ui-g-12 ui-md-6 ui-lg-3">
-          <label for="inputText">Username:</label>
-          <input id="inputText" type="text" size="30" pInputText>
+          <label for="inputText">Vendor Name:</label>
+          <input id="inputText" placeholder="Enter vendor name..." type="text" size="30" pInputText>
         </div>
         <div class="ui-g-12 ui-md-6 ui-lg-3">
-          <label for="inputTextDisabled">Username:</label>
-          <input id="inputTextDisabled" type="text" disabled="true"value="DISABLED" size="30" pInputText>
+          <label for="inputTextDisabled">Purchase Mode:</label>
+          <input id="inputTextDisabled" type="text" disabled="true" value="DISABLED" size="30" pInputText>
         </div>
 
       </p-tabPanel>
@@ -59,7 +59,7 @@
           </div>
         </div>
       </p-tabPanel>
-      <p-tabPanel header="Documentation">
+      <p-tabPanel header="Use Cases">
         Content 3
       </p-tabPanel>
     </p-tabView>
@@ -101,7 +101,7 @@
           </div>
         </div>
       </p-tabPanel>
-      <p-tabPanel header="Documentation">
+      <p-tabPanel header="Use Cases">
         Content 3
       </p-tabPanel>
     </p-tabView>
@@ -152,7 +152,7 @@
           </div>
         </div>
       </p-tabPanel>
-      <p-tabPanel header="Documentation">
+      <p-tabPanel header="Use Cases">
         Content 3
       </p-tabPanel>
     </p-tabView>

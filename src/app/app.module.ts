@@ -9,10 +9,10 @@ import {
   ButtonModule, CalendarModule, CheckboxModule, ConfirmationService, ConfirmDialogModule, DataTableModule, DialogModule,
   DropdownModule,
   FileUploadModule,
-  InputTextModule, MessageModule,
+  InputTextModule, MessageModule, OverlayPanelModule,
   PanelModule, RadioButtonModule,
-  SharedModule,
-  TabViewModule, TooltipModule
+  SharedModule, SidebarModule,
+  TabViewModule, TooltipModule,
 } from 'primeng/primeng';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
@@ -22,6 +22,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { GeneralComponent } from './general/general.component';
 import { PanelComponent } from './panel/panel.component';
 import { DialogComponent } from './dialog/dialog.component';
+import { TableComponent } from './table/table.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 
@@ -36,6 +38,8 @@ import { DialogComponent } from './dialog/dialog.component';
     GeneralComponent,
     PanelComponent,
     DialogComponent,
+    TableComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,7 +61,10 @@ import { DialogComponent } from './dialog/dialog.component';
     InputTextModule,
     MessageModule,
     CheckboxModule,
-    RadioButtonModule
+    RadioButtonModule,
+    OverlayPanelModule,
+    SidebarModule
+
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]

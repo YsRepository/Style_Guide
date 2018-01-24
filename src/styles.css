@@ -10,7 +10,7 @@ body{
 }
 
 /*HEADER*/
-.header{
+.header-app{
   background: #20272a;
   width:100%;
   height: 3em;
@@ -26,22 +26,23 @@ body{
   background: #ebedf0;
   min-height:93vh;
 }
+
 @media (max-width: 640px){
   .aside{
-    display: none;
+   display:none;
   }
 }
-.navbar-nav{
+.aside .navbar-nav{
   display: block!important;
   width: 100%;
   padding-top:2em;
 }
-.navbar ul li a {
+.aside .navbar ul li a {
   color:#333;
   font-size: .9em;
   border-bottom: 1px solid #fff;
 }
-.navbar ul li a:hover{
+.aside .navbar ul li a:hover{
   background:rgba(35,153,229,0.7);
   opacity: .9;
   color:#fff;
@@ -139,11 +140,10 @@ p{
 
 
 /*BUTTONS STYLES*/
-
-/*buttons primary*/
 .ui-button{
-  width: 100%;
+  width:100%;
 }
+/*buttons primary*/
 .ui-button, .ui-widget.ui-button, .ui-button {
   border: 1px solid #2399e5;
   color: #FFFFFF;
@@ -151,10 +151,30 @@ p{
   transition: background-color .2s;
 }
 
+/*button table*/
+.ui-button-primary-icon{
+  width: 25px!important;
+  height: 25px!important;
+  padding: 10px;
+  text-align: center;
+  font-size: .9em;
+  diplay: inline-block;
+}
+.ui-button-danger-icon{
+  width: 25px!important;
+  height: 25px!important;
+  padding: 10px;
+  text-align: center;
+  font-size: .9em;
+  diplay: inline-block;
+  background: #d9534f!important;
+  border-color: #d9534f!important;
+}
+
 /*Button files style*/
 .labelFiles{
   color:#fff!important;
-  padding: 2px 0;
+  padding: 4px 0;
   text-align: center;
   width:100%;
   background: #125886!important;
@@ -239,27 +259,67 @@ label {
 /*-------------------------*/
 
 /*DATA TABLE*/
-
+.ui-datatable{
+  text-align: center;
+}
 .ui-datatable .ui-dropdown{
   width: auto!important;
 }
-
 .ui-datatable .ui-datatable-header{
-  padding: 0!important;
+  padding: .2em!important;
   font-weight: 700;
 }
 .ui-column-title{
   font-size: .9em!important;
 }
 
-.ui-paginator .ui-paginator-page, .ui-paginator
-.ui-paginator-next, .ui-paginator .ui-paginator-last,
-.ui-paginator .ui-paginator-first, .ui-paginator
-.ui-paginator-prev {
-  cursor: pointer;
-  width: 20px;
-  height: 20px;
+
+
+/*-------------------------*/
+
+/*DATA TABLE*/
+
+.ui-panel .ui-panel-titlebar-icon {
+  margin-left: .2em;
+  margin-top: -0.1em;
+  border: none;
+  background: none;
 }
-.ui-paginator span{
-  margin-top:0!important;
+.ui-panel .ui-panel-titlebar {
+  padding: 0.3em .75em;
+}
+
+/*-------------------------*/
+
+/*NAV MENU*/
+
+.header{
+  background: #333;
+}
+.title-module{
+  background: #eee;
+  height:30px;
+}
+.header .navbar-nav{
+  float:right!important;
+  margin:0 auto!important;
+}
+.header ul li a{
+  color: #eee!important;
+}
+.header button{
+  border:none!important;
+}
+.fa-bars{
+  color:#fff;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+/*-------------------------*/
+
+/*NAV MENU*/
+
+.ui-dialog.ui-widget .ui-dialog-titlebar {
+  padding: 0.2em 0em 0em 1.3em;
 }
