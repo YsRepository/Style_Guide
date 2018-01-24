@@ -66,6 +66,92 @@
   </div>
 </div>
 
+<!--filter advanced-->
+
+
+<div class="ui-g-12">
+  <br>
+  <div class="container">
+    <h5>Required fields</h5>
+    <p-tabView>
+      <p-tabPanel header="Example">
+        <br>
+        <p>Style of validation message:</p>
+
+        <div id="filtersAdvanced" [@heroState]='state'>
+          <div class="ui-g">
+
+            <div class="ui-g-12 ui-md-6 ui-lg-2">
+              <label for="desCorp">Corp. Description :</label>
+              <input name="desCorp" type="text" id="desCorp" pInputText placeholder="Enter description corp">
+            </div>
+
+            <div class="ui-g-12 ui-md-6 ui-lg-2">
+              <label for="descLoc">Local Description :</label>
+              <input name="desLocal" type="text" id="descLoc" pInputText placeholder="Enter description local">
+            </div>
+
+            <div class="ui-g-12 ui-md-6 ui-lg-2">
+              <label for="marcaCorp">Corp. Brand :</label>
+              <input name="marcaCorp" type="text" id="marcaCorp" pInputText placeholder="Enter corp brand" >
+            </div>
+
+            <div class="ui-g-12 ui-md-6 ui-lg-2">
+              <label for="marcaLoc">Local Brand :</label>
+              <input name="marcaLocal" type="text" id="marcaLoc" pInputText placeholder="Enter local brand" >
+            </div>
+
+            <div class="ui-g-12 ui-md-6 ui-lg-2">
+              <label for="barCodeCorp">Corp. Barcode :</label>
+              <input name="barCodeCorp" type="text" id="barCodeCorp" pInputText placeholder="Enter corp barcode">
+            </div>
+
+            <div class="ui-g-12 ui-md-6 ui-lg-2">
+              <label for="barCodeLoc">Local Barcode :</label>
+              <input name="barCodeLoc" type="text" id="barCodeLoc" pInputText placeholder="Enter loc barcode" >
+            </div>
+
+            <div class="ui-g-12 ui-md-6 ui-lg-2">
+              <label for="idCorp">Id Corp :</label>
+              <input name="idProdCorp" type="number" id="idCorp" pInputText placeholder="Enter id corp" >
+            </div>
+
+
+          </div>
+        </div>
+        <div class="filterAdvanced">
+          <a (click)="showFilters()">
+            {{formulario ? 'Hide Filter Advanced' : 'Show Filter Advanced'}}
+          </a>
+        </div>
+      </p-tabPanel>
+      <p-tabPanel header="Source">
+        <div class="ui-g">
+          <h6 class="subTitle">HTML :</h6>
+          <div class="ui-g-12 bgHtml">
+            ....
+          </div>
+          <br>
+          <br>
+          <h6 class="subTitle">css :</h6>
+          <div class="ui-g-12 bgHtml">
+            <p><span>.ui-button-primary-icon</span> &#123;
+              width: 20px!important;
+              height: 20px!important;
+              padding: 10px;
+              text-align: center;
+              font-size: .9em; &#125;</p>
+          </div>
+        </div>
+      </p-tabPanel>
+      <p-tabPanel header="Use Cases">
+        Content 3
+      </p-tabPanel>
+    </p-tabView>
+  </div>
+</div>
+
+
 <!-- input required-->
 
 <div class="ui-g-12">
